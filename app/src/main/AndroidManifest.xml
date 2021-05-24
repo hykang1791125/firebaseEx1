@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.firebaseex1">
 
+<!--알람 설정-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,8 +25,10 @@
         </activity>
         <activity android:name=".ViewuserinformActivity" />
         <activity android:name=".EnteruserinformActivity" />
+        <activity android:name=".AfterEnterCar" />
 
-
+        <!--알람 설정-->
+<!--        <receiver android:process=":remote" android:name=".Alarm"></receiver>-->
     </application>
 
 </manifest>

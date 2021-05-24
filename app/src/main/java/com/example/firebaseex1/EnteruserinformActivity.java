@@ -11,8 +11,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
-import java.util.Map;
+/***********************************************
+EnteruserinformActivity.java
+1.이름과 차번호를 입력
+2.save버튼 클릭
+3.서버에 값 전송 후 intent로 다음 액티비티로 값 전달
+**********************************************/
+
+
+ /*****해결할것*******
+
+intent로 전송했던 값을 프레퍼런스에 저장해서
+ 앱 내의 모든 액티비티에서 꺼내볼 수 있게끔 변경하기
+
+ ***********************/
+
 //사용자 정보를 담아서 서버에 등록
 //사용자 이름 editText id : username
 //차 넘버 editText id : carnum
@@ -49,6 +62,7 @@ public class EnteruserinformActivity extends AppCompatActivity {
 
                 enterusername = EditText_username.getText().toString(); //사용자가 입력한 값 가져와서 문자열로 변환
                 entercarnum = EditText_carnum.getText().toString();
+
                 //버튼 누르면 값 받아와서 서버로 넘김
                 writeNewUser();
 
